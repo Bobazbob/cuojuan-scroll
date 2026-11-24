@@ -291,50 +291,54 @@ drop.addEventListener('click', (event) => {
 });
 $('replay').addEventListener('click', replay);
 
-/** 16:9 整景等比完整显示；阅读区放不下时整块移到场景下方。 V02修复：准确计算容器宽度，统一等比缩放。 */
+/** 16:9 整景等比完整显示；阅读区放不下时整块移到场景下方。 */
 function layout() {
   const pageElem = document.documentElement;
   const gutter = Math.min(24, innerWidth * 0.02);
   
-  // 实际可用宽度（扣除 gutter + safe-area）
-  const actualAvailW = pageElem.clientWidth - gutter * 2;
+  // 实际页面可用宽度
+  const actualPageW = pageElem.clientWidth;
+  const availW = Math.max(0, actualPageW - gutter * 2);
   
-  // 第一步：计算内布局宽度
-  let width = Math.min(actualAvailW, innerHeight * 16 / 9 - gutter * 2);
+  // 第一步：计算内布局（画卷+阅读叠在内）的理想宽度
+  let width = Math.min(availW, innerHeight * 16 / 9 - gutter * 2);
   const height = width * 9 / 16;
   const readerPx = (READER.bottom - READER.top) / FRAME.height * height;
   const inside = readerPx >= 92 && width >= 900;
   
-  // 第二步：若下方阅读，重新计算但保持16:9等比
+  // 第二步：若下方阅读，重新计算宽度，保持16:9等比
   let finalWidth = width;
   let finalHeight = height;
   if (!inside) {
     const isLandscape = innerWidth > innerHeight;
     if (isLandscape) {
-      // 横屏：让出150px给阅读区
-      finalWidth = Math.min(actualAvailW, (innerHeight - 150 - gutter * 2) * 16 / 9);
+      finalWidth = Math.min(availW, (innerHeight - 150 - gutter * 2) * 16 / 9);
     } else {
-      // 竖屏：画境填满宽度
-      finalWidth = actualAvailW;
+      finalWidth = availW;
     }
     finalHeight = finalWidth * 9 / 16;
   }
   
+  // 直接设置scroll的宽高，不依赖CSS aspect-ratio
   scroll.style.width = finalWidth + 'px';
   scroll.style.height = finalHeight + 'px';
-  stage.style.height = finalHeight + 'px';
+  stage.style.width = '100%';
+  stage.style.height = '100%';
+  
   const layoutName = inside ? 'inside' : 'below';
   const changed = page.dataset.layout !== layoutName;
   page.dataset.layout = layoutName;
   
-  // V03/V05修复：正确设置窄屏标记
-  page.dataset.narrowLayout = inside ? 'no' : (finalWidth < 500 ? 'yes' : 'no');
+  // V03/V05修复：设置窄屏标记（<=500px视为窄屏）
+  page.setAttribute('data-narrow-layout', inside ? 'no' : (finalWidth <= 500 ? 'yes' : 'no'));
   
   const reader = $('reader');
   if (inside) {
     Object.assign(reader.style, {
-      left: pct(READER.left, FRAME.width), width: pct(READER.right - READER.left, FRAME.width),
-      top: (READER.top / FRAME.height * finalHeight) + 'px', height: readerPx + 'px',
+      left: pct(READER.left, FRAME.width), 
+      width: pct(READER.right - READER.left, FRAME.width),
+      top: (READER.top / FRAME.height * finalHeight) + 'px', 
+      height: readerPx + 'px',
     });
   } else {
     reader.removeAttribute('style');
