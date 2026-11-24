@@ -1,0 +1,47 @@
+[
+  {
+    "file": "ui/scroll_frame.png",
+    "dimensions": [
+      1600,
+      900
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_pixels": 1264790,
+    "opaque_pixels": 528,
+    "bytes": 403603,
+    "icc_srgb": true
+  },
+  {
+    "file": "ui/paper_texture.png",
+    "dimensions": [
+      1600,
+      900
+    ],
+    "alpha_extrema": [
+      0,
+      28
+    ],
+    "transparent_pixels": 118552,
+    "opaque_pixels": 0,
+    "bytes": 1703241,
+    "icc_srgb": true
+  },
+  {
+    "file": "ui/ending_card_frame.png",
+    "dimensions": [
+      1600,
+      900
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_pixels": 1358579,
+    "opaque_pixels": 120,
+    "bytes": 251520,
+    "icc_srgb": true
+  }
+]

@@ -1,0 +1,9 @@
+PASS daiyu_huaguoshan_end_1 actual pixel click / 5 PNG ready / expression / card / replay
+PASS daiyu_huaguoshan_end_2 actual pixel click / 5 PNG ready / expression / card / replay
+PASS daiyu_daguanyuan_end_1 actual pixel click / 5 PNG ready / expression / card / replay
+PASS daiyu_daguanyuan_end_2 actual pixel click / 5 PNG ready / expression / card / replay
+PASS wukong_huaguoshan_end_1 actual pixel click / 5 PNG ready / expression / card / replay
+PASS wukong_huaguoshan_end_2 actual pixel click / 5 PNG ready / expression / card / replay
+PASS wukong_daguanyuan_end_1 actual pixel click / 5 PNG ready / expression / card / replay
+PASS wukong_daguanyuan_end_2 actual pixel click / 5 PNG ready / expression / card / replay
+PASS browser decode dimensions for all 17 checked-in PNGs; UI exceptions: 0

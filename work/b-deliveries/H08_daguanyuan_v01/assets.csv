@@ -1,0 +1,5 @@
+﻿asset_id,kind,character,scene,expression,layer,file_relpath,width,height,has_alpha,foot_anchor_x,foot_anchor_y,status,notes
+daguanyuan_layer1_back,scene_layer,,daguanyuan,,back,scenes/daguanyuan/daguanyuan_layer1_back.png,1600,900,true,,,measured,实际图像工具生成；等比精确导出；RGBA/sRGB ICC；底层全不透明
+daguanyuan_layer2_mid,scene_layer,,daguanyuan,,mid,scenes/daguanyuan/daguanyuan_layer2_mid.png,1600,900,true,,,measured,实际图像工具生成的透明独立层；清除远处低alpha残留；实际叠合另看preview；未页面验收
+daguanyuan_layer3_ground,scene_layer,,daguanyuan,,ground,scenes/daguanyuan/daguanyuan_layer3_ground.png,1600,900,true,,,measured,实际图像工具生成的透明独立层；清除远处低alpha残留；实际叠合另看preview；未页面验收
+daguanyuan_layer4_front,scene_layer,,daguanyuan,,front,scenes/daguanyuan/daguanyuan_layer4_front.png,1600,900,true,,,measured,实际图像工具生成的透明独立层；清除远处低alpha残留；实际叠合另看preview；未页面验收

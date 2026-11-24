@@ -1,0 +1,20 @@
+﻿asset_id,kind,character,scene,expression,layer,file_relpath,width,height,has_alpha,foot_anchor_x,foot_anchor_y,status,notes
+,preview,,,,,reference/h02_style_v01/sample.png,1600,900,true,,,verified,H02_style_v01；B确认画风；视觉参考；sRGB；alpha全255
+,preview,,,,,reference/h02_style_v01/sample_original.png,1672,941,false,,,verified,H02_style_v01；原件留档；非规范画幅；无alpha通道
+daguanyuan_layer1_back,scene_layer,,daguanyuan,,back,scenes/daguanyuan/daguanyuan_layer1_back.png,1600,900,true,,,verified,H08_daguanyuan_v01；实际图像工具生成；等比精确导出；RGBA/sRGB ICC；底层全不透明
+daguanyuan_layer2_mid,scene_layer,,daguanyuan,,mid,scenes/daguanyuan/daguanyuan_layer2_mid.png,1600,900,true,,,verified,H08_daguanyuan_v01；实际图像工具生成的透明独立层；清除远处低alpha残留；实际叠合另看preview；未页面验收
+daguanyuan_layer3_ground,scene_layer,,daguanyuan,,ground,scenes/daguanyuan/daguanyuan_layer3_ground.png,1600,900,true,,,verified,H08_daguanyuan_v01；实际图像工具生成的透明独立层；清除远处低alpha残留；实际叠合另看preview；未页面验收
+daguanyuan_layer4_front,scene_layer,,daguanyuan,,front,scenes/daguanyuan/daguanyuan_layer4_front.png,1600,900,true,,,verified,H08_daguanyuan_v01；实际图像工具生成的透明独立层；清除远处低alpha残留；实际叠合另看preview；未页面验收
+daiyu_happy,character,daiyu,,happy,,characters/daiyu/daiyu_happy.png,768,1024,true,0.499,0.980,verified,H06_characters_v01；实际图像模型编辑表情；注册后仅合成面部内区；面部外像素/完整alpha与本包neutral逐像素一致；实测足底沿母版；未游戏切换
+daiyu_neutral,character,daiyu,,neutral,,characters/daiyu/daiyu_neutral.png,768,1024,true,0.499,0.980,verified,"H06_characters_v01；RGBA真透明/sRGB ICC；实测鞋履接触带中点(383.5,1004)；边缘去污染3132像素；未游戏试放；按A反馈清理离主体>3px的低alpha残留，主体alpha≥16与锚点不变"
+daiyu_upset,character,daiyu,,upset,,characters/daiyu/daiyu_upset.png,768,1024,true,0.499,0.980,verified,H06_characters_v01；实际图像模型编辑表情；注册后仅合成面部内区；面部外像素/完整alpha与本包neutral逐像素一致；实测足底沿母版；未游戏切换
+huaguoshan_layer1_back,scene_layer,,huaguoshan,,back,scenes/huaguoshan/huaguoshan_layer1_back.png,1600,900,true,,,verified,H07_huaguoshan_v01；实际图像工具生成；等比精确导出；RGBA/sRGB ICC；底层全不透明
+huaguoshan_layer2_mid,scene_layer,,huaguoshan,,mid,scenes/huaguoshan/huaguoshan_layer2_mid.png,1600,900,true,,,verified,H07_huaguoshan_v01；实际图像工具生成的透明独立层；清除远处低alpha残留；实际叠合另看preview；未页面验收
+huaguoshan_layer3_ground,scene_layer,,huaguoshan,,ground,scenes/huaguoshan/huaguoshan_layer3_ground.png,1600,900,true,,,verified,H07_huaguoshan_v01；实际图像工具生成的透明独立层；清除远处低alpha残留；实际叠合另看preview；未页面验收
+huaguoshan_layer4_front,scene_layer,,huaguoshan,,front,scenes/huaguoshan/huaguoshan_layer4_front.png,1600,900,true,,,verified,H07_huaguoshan_v01；实际图像工具生成的透明独立层；清除远处低alpha残留；实际叠合另看preview；未页面验收
+ui_ending_card_frame,ui,,,,,ui/ending_card_frame.png,1600,900,true,,,verified,H09_ui_v01；真实图像工具生成；1600×900 RGBA/sRGB；中心透明；整幅等比使用，不做九宫格拉伸
+ui_paper_texture,ui,,,,,ui/paper_texture.png,1600,900,true,,,verified,H09_ui_v01；真实生成纸纹的12%alpha透明叠加版；无缝平铺未验证，按整幅16:9使用；不作为底色
+ui_scroll_frame,ui,,,,,ui/scroll_frame.png,1600,900,true,,,verified,H09_ui_v01；真实图像工具生成；1600×900 RGBA/sRGB；中心透明；整幅等比使用，不做九宫格拉伸
+wukong_angry,character,wukong,,angry,,characters/wukong/wukong_angry.png,768,1024,true,0.500,0.979,verified,H06_characters_v01；实际图像模型编辑表情；注册后仅合成面部内区；面部外像素/完整alpha与本包neutral逐像素一致；实测足底沿母版；未游戏切换
+wukong_happy,character,wukong,,happy,,characters/wukong/wukong_happy.png,768,1024,true,0.500,0.979,verified,H06_characters_v01；实际图像模型编辑表情；注册后仅合成面部内区；面部外像素/完整alpha与本包neutral逐像素一致；实测足底沿母版；未游戏切换
+wukong_neutral,character,wukong,,neutral,,characters/wukong/wukong_neutral.png,768,1024,true,0.500,0.979,verified,"H06_characters_v01；RGBA真透明/sRGB ICC；实测鞋履接触带中点(384.0,1003)；边缘去污染12159像素；未游戏试放；按A反馈清理离主体>3px的低alpha残留，主体alpha≥16与锚点不变"

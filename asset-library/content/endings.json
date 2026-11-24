@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "endings": [
+    {
+      "endingId": "daiyu_huaguoshan_end_1",
+      "storyId": "daiyu_huaguoshan",
+      "title": "花有归处",
+      "text": "黛玉蹲下，将落花拢在树根旁，用花锄覆上一层薄土。山里安静了片刻，才传来小声商量：“莫非礼送得还不够？”她望着剩下的桃花，眉间仍有些怜惜：“树上这些，已够我看一春。往后只请我来看，不必请花下来。”猴儿们这才住手；她替落花寻了归处，也替未落的花省下了一场盛情。",
+      "expression": "upset",
+      "effects": [
+        "petal_gather"
+      ]
+    },
+    {
+      "endingId": "daiyu_huaguoshan_end_2",
+      "storyId": "daiyu_huaguoshan",
+      "title": "树上留春",
+      "text": "黛玉先请猴儿们停手：“若真当我是客，便留着花，让我多看几日。”山里答应得震天响，又追问该送多少才算周到。她忍不住笑了：“一枝也别折，便是你们送我的。”枝头终于不再晃。花果山头一回发现，厚礼也能留在树上；她则立下一条护花约，只等满山春色慢慢兑现。",
+      "expression": "happy",
+      "effects": [
+        "petal_fall"
+      ]
+    },
+    {
+      "endingId": "daiyu_daguanyuan_end_1",
+      "storyId": "daiyu_daguanyuan",
+      "title": "春归一隅",
+      "text": "黛玉把路上的花收拢，安放在树荫下，替春宴让出一条净路。廊外有人赞她收拾得快，她却只是轻轻应了一声：“不是收拾，是送它们歇一歇。”热闹渐渐往席上去了，她仍在树下站了片刻。落花有了安静的去处，她也不必为了赶上众人的春天，匆匆催自己的心事散场。",
+      "expression": "upset",
+      "effects": [
+        "petal_gather"
+      ]
+    },
+    {
+      "endingId": "daiyu_daguanyuan_end_2",
+      "storyId": "daiyu_daguanyuan",
+      "title": "落花也入席",
+      "text": "黛玉请众人留下一小片落花，取它作春宴的诗题，不必再折枝装点。方才催着扫花的人，反来问她哪句最合适。她眉眼一亮：“先容花落定，再容你落笔。”园路照旧让出来，春色却不再被一并扫走。她没有把花强留在枝头，只替它们在这场热闹里，寻到一个不碍人的位置。",
+      "expression": "happy",
+      "effects": [
+        "petal_fall"
+      ]
+    },
+    {
+      "endingId": "wukong_huaguoshan_end_1",
+      "storyId": "wukong_huaguoshan",
+      "title": "这一篮有数",
+      "text": "悟空定下先幼后长、人人一份的规矩，自己排在最后。猴儿们起初还想争谁年纪更小，见他真等着，倒纷纷催大王先拿。他把手一背：“俺定的规矩，总不能拿俺开个口子。”这一篮未必让谁吃饱，却先让每个人知道自己不会落空。山前的争吵歇了，分桃的次序也留了下来。",
+      "expression": "neutral",
+      "effects": [
+        "gold_spark"
+      ]
+    },
+    {
+      "endingId": "wukong_huaguoshan_end_2",
+      "storyId": "wukong_huaguoshan",
+      "title": "大圣先忙",
+      "text": "悟空让猴儿们照次序分眼前的桃，自己借分身另去寻熟的。几道忙影才一散开，争吵便小了：“大王都跑腿了，咱们还抢什么？”他回来时，原先最怕分少的已替旁人留好一份。新桃还没摆上，山前倒先宽敞起来。悟空笑着收回分身，心想这回忙的虽是自己，省下的却是满山的嘴。",
+      "expression": "happy",
+      "effects": [
+        "clone_echo"
+      ]
+    },
+    {
+      "endingId": "wukong_daguanyuan_end_1",
+      "storyId": "wukong_daguanyuan",
+      "title": "大圣也受礼",
+      "text": "悟空耐着性子听完，照礼问候，才发现主人回礼也一样郑重，原来规矩不只管客人。他那点不服渐渐散了，仍忍不住补上一句：“好，礼尚往来；下回上山，也得尝俺的桃。”廊外传来笑声，这一回倒没有人再添条目。大圣依旧站得自在，只是先前嫌麻烦的招呼，如今多了几分真心。",
+      "expression": "neutral",
+      "effects": [
+        "gold_spark"
+      ]
+    },
+    {
+      "endingId": "wukong_daguanyuan_end_2",
+      "storyId": "wukong_daguanyuan",
+      "title": "满园都是客",
+      "text": "悟空借分身替自己应酬，原想省下一声招呼，谁知每多一个身影，礼数便要重说一遍。园中人还客气地请他报清客数，好免了失礼。他听着四面八方的问候，终于笑着收回分身：“罢了，还是只招待俺这一个吧！”神通没能替他少说半句话，倒替主人多添了几位贵客。",
+      "expression": "happy",
+      "effects": [
+        "clone_echo"
+      ]
+    }
+  ]
+}

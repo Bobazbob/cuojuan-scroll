@@ -1,0 +1,18 @@
+{
+  "intro": {
+    "daiyu_huaguoshan": 103,
+    "daiyu_daguanyuan": 102,
+    "wukong_huaguoshan": 102,
+    "wukong_daguanyuan": 103
+  },
+  "endings": {
+    "daiyu_huaguoshan_end_1": 128,
+    "daiyu_huaguoshan_end_2": 122,
+    "daiyu_daguanyuan_end_1": 119,
+    "daiyu_daguanyuan_end_2": 121,
+    "wukong_huaguoshan_end_1": 121,
+    "wukong_huaguoshan_end_2": 124,
+    "wukong_daguanyuan_end_1": 125,
+    "wukong_daguanyuan_end_2": 118
+  }
+}

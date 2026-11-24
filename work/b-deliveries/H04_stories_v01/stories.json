@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "stories": [
+    {
+      "storyId": "daiyu_huaguoshan",
+      "character": "daiyu",
+      "scene": "huaguoshan",
+      "title": "花该落在哪里",
+      "intro": "卷页一翻，黛玉落在花果山的桃树下。山里传来猴儿们的招呼：“贵客来了，送她一树花！”枝头一阵晃，花瓣纷纷落上衣袖。她扶住小花锄，轻声道：“好意我领了，只是花也经不起这般好意。”眼前的落花还未收，枝头又要摇了。",
+      "choice": {
+        "prompt": "眼前的花与树上的花，她要先顾哪一边？",
+        "options": [
+          {
+            "optionId": "bury_petals",
+            "label": "先安葬落花",
+            "endingId": "daiyu_huaguoshan_end_1"
+          },
+          {
+            "optionId": "protect_blossoms",
+            "label": "立下护花约",
+            "endingId": "daiyu_huaguoshan_end_2"
+          }
+        ]
+      }
+    },
+    {
+      "storyId": "daiyu_daguanyuan",
+      "character": "daiyu",
+      "scene": "daguanyuan",
+      "title": "落花能否入席",
+      "intro": "春宴将开，园路上的落花却先成了麻烦。有人在廊外催着清扫，好让赏春的人走得干净。黛玉扶着花锄看了半晌：“既为赏春而来，怎么倒先嫌春落在路上？”话音落下，她又望了望通向宴席的小径。花已落了，眼前的人也还在等。",
+      "choice": {
+        "prompt": "这些已经落下的花，她想怎样留下？",
+        "options": [
+          {
+            "optionId": "collect_alone",
+            "label": "独自收起落花",
+            "endingId": "daiyu_daguanyuan_end_1"
+          },
+          {
+            "optionId": "invite_spring",
+            "label": "邀众人留春",
+            "endingId": "daiyu_daguanyuan_end_2"
+          }
+        ]
+      }
+    },
+    {
+      "storyId": "wukong_huaguoshan",
+      "character": "wukong",
+      "scene": "huaguoshan",
+      "title": "最后一篮桃",
+      "intro": "花果山的风里，今天全是争桃的声音。最后一篮熟桃摆在山前，猴儿们一会儿嫌分得少，一会儿说找得累，吵得悟空把金箍棒换了三次手。他听够了，才笑道：“嗓门倒大，桃子可不会被你们喊多。”眼前这一篮，总得先有个处置。",
+      "choice": {
+        "prompt": "这场争桃，大圣先从哪里下手？",
+        "options": [
+          {
+            "optionId": "share_fairly",
+            "label": "先定分桃规矩",
+            "endingId": "wukong_huaguoshan_end_1"
+          },
+          {
+            "optionId": "seek_with_clones",
+            "label": "分身再找熟桃",
+            "endingId": "wukong_huaguoshan_end_2"
+          }
+        ]
+      }
+    },
+    {
+      "storyId": "wukong_daguanyuan",
+      "character": "wukong",
+      "scene": "daguanyuan",
+      "title": "大圣也要讲礼",
+      "intro": "大观园的春宴递来邀约，悟空刚要往里走，廊外便有人细细说明迎客的礼数。问候要有先后，作揖也须看时机。他握着金箍棒听得挠头：“俺老孙会作揖，只是这揖还要分几回？”主人并无刁难之意，可这一个招呼，实在转了太多弯。",
+      "choice": {
+        "prompt": "这番应酬，大圣打算亲自还是借影？",
+        "options": [
+          {
+            "optionId": "greet_in_person",
+            "label": "亲自按礼应酬",
+            "endingId": "wukong_daguanyuan_end_1"
+          },
+          {
+            "optionId": "greet_with_echo",
+            "label": "借分身来应酬",
+            "endingId": "wukong_daguanyuan_end_2"
+          }
+        ]
+      }
+    }
+  ]
+}

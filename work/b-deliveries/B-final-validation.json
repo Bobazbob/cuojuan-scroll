@@ -1,0 +1,12 @@
+{
+  "b_runtime_asset_count": 17,
+  "b_runtime_hashes_unchanged": true,
+  "a_claude_package_exists": true,
+  "a_claude_package_crc_ok": true,
+  "a_claude_package_bytes": 70540901,
+  "a_acceptance_source": "work/coordination/a-to-b.md and a-status.md",
+  "a_confirmed_all_b_batches": true,
+  "h05_rework_closed": true,
+  "claude_started_by_b": false,
+  "final_visual_browser_review_by_b": false
+}

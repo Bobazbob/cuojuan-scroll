@@ -1,0 +1,26 @@
+﻿
+== desktop 1600x900 layout=inside
+miss hint: 请点岩台上带圆环的落点。
+options: ['先安葬落花', '立下护花约']
+ending daiyu_huaguoshan_end_1 expr=upset char=daiyu_upset figure=daiyu_upset-DCKpCMHD.png effects=petal_gather
+figure foot in scene px: {"footX": 999.9892549877242, "footY": 674.9884463028169, "h": 503.9887764084507}
+replay -> cover runId=2
+miss hint: 请点岩台上带圆环的落点。
+options: ['先安葬落花', '立下护花约']
+ending daiyu_huaguoshan_end_2 expr=happy char=daiyu_happy figure=daiyu_happy-CWQc98Kv.png effects=petal_fall
+figure foot in scene px: {"footX": 999.9892549877242, "footY": 674.9884463028169, "h": 503.9887764084507}
+replay -> cover runId=3
+== laptop 1280x720 layout=below
+miss hint: 请点岩台上带圆环的落点。
+options: ['先安葬落花', '立下护花约']
+ending daiyu_huaguoshan_end_1 expr=upset char=daiyu_upset figure=daiyu_upset-DCKpCMHD.png effects=petal_gather
+figure foot in scene px: {"footX": 999.9856950431034, "footY": 674.96875, "h": 503.98706896551727}
+replay -> cover runId=2
+miss hint: 请点岩台上带圆环的落点。
+options: ['先安葬落花', '立下护花约']
+ending daiyu_huaguoshan_end_2 expr=happy char=daiyu_happy figure=daiyu_happy-CWQc98Kv.png effects=petal_fall
+figure foot in scene px: {"footX": 999.9856950431034, "footY": 674.96875, "h": 503.98706896551727}
+replay -> cover runId=3
+page errors: 0
+
+

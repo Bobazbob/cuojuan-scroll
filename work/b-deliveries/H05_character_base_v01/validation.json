@@ -1,0 +1,36 @@
+[
+  {
+    "file": "characters/daiyu/daiyu_neutral.png",
+    "dimensions": [
+      768,
+      1024
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "zero_alpha_pixels": 593345,
+    "sRGB_ICC_present": true,
+    "foot_anchor": [
+      "0.499",
+      "0.980"
+    ]
+  },
+  {
+    "file": "characters/wukong/wukong_neutral.png",
+    "dimensions": [
+      768,
+      1024
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "zero_alpha_pixels": 608021,
+    "sRGB_ICC_present": true,
+    "foot_anchor": [
+      "0.500",
+      "0.979"
+    ]
+  }
+]

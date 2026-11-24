@@ -1,0 +1,4 @@
+﻿asset_id,kind,character,scene,expression,layer,file_relpath,width,height,has_alpha,foot_anchor_x,foot_anchor_y,status,notes
+ui_scroll_frame,ui,,,,,ui/scroll_frame.png,1600,900,true,,,measured,真实图像工具生成；1600×900 RGBA/sRGB；中心透明；整幅等比使用，不做九宫格拉伸
+ui_paper_texture,ui,,,,,ui/paper_texture.png,1600,900,true,,,measured,真实生成纸纹的12%alpha透明叠加版；无缝平铺未验证，按整幅16:9使用；不作为底色
+ui_ending_card_frame,ui,,,,,ui/ending_card_frame.png,1600,900,true,,,measured,真实图像工具生成；1600×900 RGBA/sRGB；中心透明；整幅等比使用，不做九宫格拉伸

@@ -1,0 +1,134 @@
+[
+  {
+    "asset_id": "daiyu_neutral",
+    "size": [
+      768,
+      1024
+    ],
+    "alpha_bounds": [
+      223,
+      53,
+      576,
+      1009
+    ],
+    "visible_bounds": [
+      226,
+      56,
+      573,
+      1006
+    ],
+    "alpha_identical_to_neutral": true,
+    "far_low_alpha_residue": 0,
+    "icc_srgb": true
+  },
+  {
+    "asset_id": "daiyu_happy",
+    "size": [
+      768,
+      1024
+    ],
+    "alpha_bounds": [
+      223,
+      53,
+      576,
+      1009
+    ],
+    "visible_bounds": [
+      226,
+      56,
+      573,
+      1006
+    ],
+    "alpha_identical_to_neutral": true,
+    "far_low_alpha_residue": 0,
+    "icc_srgb": true
+  },
+  {
+    "asset_id": "daiyu_upset",
+    "size": [
+      768,
+      1024
+    ],
+    "alpha_bounds": [
+      223,
+      53,
+      576,
+      1009
+    ],
+    "visible_bounds": [
+      226,
+      56,
+      573,
+      1006
+    ],
+    "alpha_identical_to_neutral": true,
+    "far_low_alpha_residue": 0,
+    "icc_srgb": true
+  },
+  {
+    "asset_id": "wukong_neutral",
+    "size": [
+      768,
+      1024
+    ],
+    "alpha_bounds": [
+      257,
+      84,
+      569,
+      1008
+    ],
+    "visible_bounds": [
+      260,
+      86,
+      567,
+      1005
+    ],
+    "alpha_identical_to_neutral": true,
+    "far_low_alpha_residue": 0,
+    "icc_srgb": true
+  },
+  {
+    "asset_id": "wukong_happy",
+    "size": [
+      768,
+      1024
+    ],
+    "alpha_bounds": [
+      257,
+      84,
+      569,
+      1008
+    ],
+    "visible_bounds": [
+      260,
+      86,
+      567,
+      1005
+    ],
+    "alpha_identical_to_neutral": true,
+    "far_low_alpha_residue": 0,
+    "icc_srgb": true
+  },
+  {
+    "asset_id": "wukong_angry",
+    "size": [
+      768,
+      1024
+    ],
+    "alpha_bounds": [
+      257,
+      84,
+      569,
+      1008
+    ],
+    "visible_bounds": [
+      260,
+      86,
+      567,
+      1005
+    ],
+    "alpha_identical_to_neutral": true,
+    "far_low_alpha_residue": 0,
+    "icc_srgb": true
+  }
+]

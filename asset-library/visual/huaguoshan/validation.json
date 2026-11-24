@@ -1,0 +1,103 @@
+{
+  "layers": [
+    {
+      "file": "scenes/huaguoshan/huaguoshan_layer1_back.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "zero_alpha_pixels": 0,
+      "reading_area_alpha_max": 255,
+      "bytes": 1904271,
+      "icc_srgb": true
+    },
+    {
+      "file": "scenes/huaguoshan/huaguoshan_layer2_mid.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "zero_alpha_pixels": 1068553,
+      "reading_area_alpha_max": 0,
+      "bytes": 1151159,
+      "icc_srgb": true
+    },
+    {
+      "file": "scenes/huaguoshan/huaguoshan_layer3_ground.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "zero_alpha_pixels": 908767,
+      "reading_area_alpha_max": 254,
+      "bytes": 695487,
+      "icc_srgb": true
+    },
+    {
+      "file": "scenes/huaguoshan/huaguoshan_layer4_front.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "zero_alpha_pixels": 1414204,
+      "reading_area_alpha_max": 0,
+      "bytes": 97327,
+      "icc_srgb": true
+    }
+  ],
+  "composition": {
+    "daiyu": {
+      "suggested_drop_point": {
+        "x": 0.625,
+        "y": 0.75
+      },
+      "sprite_canvas_height_px": 504,
+      "sprite_canvas_height_ratio": 0.56,
+      "measured_static_visible_bbox": [
+        922,
+        208,
+        1093,
+        676
+      ],
+      "static_foreground_overlap_pixels": 0,
+      "foot_anchor_from_character": {
+        "x": 0.499,
+        "y": 0.98
+      },
+      "runtime_placement_verified": false
+    },
+    "wukong": {
+      "suggested_drop_point": {
+        "x": 0.75,
+        "y": 0.75
+      },
+      "sprite_canvas_height_px": 480,
+      "sprite_canvas_height_ratio": 0.533,
+      "measured_static_visible_bbox": [
+        1142,
+        245,
+        1286,
+        676
+      ],
+      "static_foreground_overlap_pixels": 0,
+      "foot_anchor_from_character": {
+        "x": 0.5,
+        "y": 0.979
+      },
+      "runtime_placement_verified": false
+    }
+  },
+  "scene_alpha_extrema": [
+    255,
+    255
+  ],
+  "runtime_verified": false
+}

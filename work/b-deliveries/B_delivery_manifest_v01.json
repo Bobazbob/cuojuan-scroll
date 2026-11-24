@@ -1,0 +1,127 @@
+{
+  "runtime_assets": [
+    {
+      "asset_id": "daiyu_neutral",
+      "source_batch": "H06_characters_v01",
+      "file_relpath": "characters/daiyu/daiyu_neutral.png",
+      "bytes": 460689,
+      "sha256": "c55ef39bece9f4be883e848e96d684b164de2d1663d3efd945e79a2713a56f37"
+    },
+    {
+      "asset_id": "wukong_neutral",
+      "source_batch": "H06_characters_v01",
+      "file_relpath": "characters/wukong/wukong_neutral.png",
+      "bytes": 457445,
+      "sha256": "14c6f511008f52018cc90a17f79b4ba036ac860401762cc4f42fa28dceff9ce0"
+    },
+    {
+      "asset_id": "daiyu_happy",
+      "source_batch": "H06_characters_v01",
+      "file_relpath": "characters/daiyu/daiyu_happy.png",
+      "bytes": 460166,
+      "sha256": "7d2a238503e58b876750c901fc7b8ac52ed8e9c74c8e0c07a5f8699bfca14f84"
+    },
+    {
+      "asset_id": "daiyu_upset",
+      "source_batch": "H06_characters_v01",
+      "file_relpath": "characters/daiyu/daiyu_upset.png",
+      "bytes": 460383,
+      "sha256": "086ef2ac2296297d51b9f2e3c204e15ea42e716a64c661a4df981bb8de538bc8"
+    },
+    {
+      "asset_id": "wukong_happy",
+      "source_batch": "H06_characters_v01",
+      "file_relpath": "characters/wukong/wukong_happy.png",
+      "bytes": 457415,
+      "sha256": "0c55397b4a982f48eca5d1569b967847a6dbb05bc0c929e99418ede54f7a508e"
+    },
+    {
+      "asset_id": "wukong_angry",
+      "source_batch": "H06_characters_v01",
+      "file_relpath": "characters/wukong/wukong_angry.png",
+      "bytes": 456938,
+      "sha256": "b1015f270b36e9148b0735b8632323df74f248afd2789c5bdb1e5a1cbba1bf3e"
+    },
+    {
+      "asset_id": "huaguoshan_layer1_back",
+      "source_batch": "H07_huaguoshan_v01",
+      "file_relpath": "scenes/huaguoshan/huaguoshan_layer1_back.png",
+      "bytes": 1904271,
+      "sha256": "2aec6814280dea74156edf5dd2a3f1232bdb50d0ff68f218acf2788bd4197150"
+    },
+    {
+      "asset_id": "huaguoshan_layer2_mid",
+      "source_batch": "H07_huaguoshan_v01",
+      "file_relpath": "scenes/huaguoshan/huaguoshan_layer2_mid.png",
+      "bytes": 1151159,
+      "sha256": "66b155a9e2f27cc9d9ecc6f4e6e2dabce584a7186b16d726bc0fffc0e1d4d804"
+    },
+    {
+      "asset_id": "huaguoshan_layer3_ground",
+      "source_batch": "H07_huaguoshan_v01",
+      "file_relpath": "scenes/huaguoshan/huaguoshan_layer3_ground.png",
+      "bytes": 695487,
+      "sha256": "901d3f87c20b54c3713b3ed65c893a226340487da76e39aad2a6de34634c0b27"
+    },
+    {
+      "asset_id": "huaguoshan_layer4_front",
+      "source_batch": "H07_huaguoshan_v01",
+      "file_relpath": "scenes/huaguoshan/huaguoshan_layer4_front.png",
+      "bytes": 97327,
+      "sha256": "4327378cf4d6a1dc03d81e76fc4ea13572fb7dddbf9426c1fdb6df138e2f3595"
+    },
+    {
+      "asset_id": "daguanyuan_layer1_back",
+      "source_batch": "H08_daguanyuan_v01",
+      "file_relpath": "scenes/daguanyuan/daguanyuan_layer1_back.png",
+      "bytes": 1941005,
+      "sha256": "e9857b770700d8d11b8c63aad2c1a5f1674ef1d293f9eef9785bdda4604ba925"
+    },
+    {
+      "asset_id": "daguanyuan_layer2_mid",
+      "source_batch": "H08_daguanyuan_v01",
+      "file_relpath": "scenes/daguanyuan/daguanyuan_layer2_mid.png",
+      "bytes": 938984,
+      "sha256": "9cabd934e42d091339334d46df70e276881d05ce72abdcb990e2df1883be1d7b"
+    },
+    {
+      "asset_id": "daguanyuan_layer3_ground",
+      "source_batch": "H08_daguanyuan_v01",
+      "file_relpath": "scenes/daguanyuan/daguanyuan_layer3_ground.png",
+      "bytes": 683202,
+      "sha256": "c2c1e38b0bdd1f33c6ff453e3daf35f8b56f81f98ac21f904651ec1e492fe1d6"
+    },
+    {
+      "asset_id": "daguanyuan_layer4_front",
+      "source_batch": "H08_daguanyuan_v01",
+      "file_relpath": "scenes/daguanyuan/daguanyuan_layer4_front.png",
+      "bytes": 89098,
+      "sha256": "e33a7e474263d089d752d8ad22aab7232414cdc42f630edd0ab894ba456dad00"
+    },
+    {
+      "asset_id": "ui_scroll_frame",
+      "source_batch": "H09_ui_v01",
+      "file_relpath": "ui/scroll_frame.png",
+      "bytes": 403603,
+      "sha256": "4daa10f8a71b654210b8817a70134baeedeaa6ff46bc3bdf7afeae599d3b65de"
+    },
+    {
+      "asset_id": "ui_paper_texture",
+      "source_batch": "H09_ui_v01",
+      "file_relpath": "ui/paper_texture.png",
+      "bytes": 1703241,
+      "sha256": "461069d6ab89cab829e2379e8a6e1235a7adef57722da1ff61694a34cd31d405"
+    },
+    {
+      "asset_id": "ui_ending_card_frame",
+      "source_batch": "H09_ui_v01",
+      "file_relpath": "ui/ending_card_frame.png",
+      "bytes": 251520,
+      "sha256": "016646a1b8231a8b146bfb13b0c87340f7dca17220ce486bd6325c2b71662262"
+    }
+  ],
+  "formal_stories": "H04_stories_v01/stories.json",
+  "formal_endings": "H04_stories_v01/endings.json",
+  "visual_spec": "H09_ui_v01/visual-spec.md",
+  "note": "Manifest only; no change to public game interfaces; H05 old batch excluded"
+}

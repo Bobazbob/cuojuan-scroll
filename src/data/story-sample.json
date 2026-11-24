@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "stories": [
+    {
+      "storyId": "daiyu_huaguoshan",
+      "character": "daiyu",
+      "scene": "huaguoshan",
+      "title": "花该落在哪里",
+      "intro": "卷页一翻，黛玉落在花果山的桃树下。山里传来猴儿们的招呼：“贵客来了，送她一树花！”枝头一阵晃，花瓣纷纷落上衣袖。她扶住小花锄，轻声道：“好意我领了，只是花也经不起这般好意。”眼前的落花还未收，枝头又要摇了。",
+      "choice": {
+        "prompt": "眼前的花与树上的花，她要先顾哪一边？",
+        "options": [
+          {
+            "optionId": "bury_petals",
+            "label": "先安葬落花",
+            "endingId": "daiyu_huaguoshan_end_1"
+          },
+          {
+            "optionId": "protect_blossoms",
+            "label": "立下护花约",
+            "endingId": "daiyu_huaguoshan_end_2"
+          }
+        ]
+      }
+    }
+  ],
+  "_exampleEndings": [
+    {
+      "endingId": "daiyu_huaguoshan_end_1",
+      "storyId": "daiyu_huaguoshan",
+      "title": "花有归处",
+      "text": "黛玉蹲下，将落花拢在树根旁，用花锄覆上一层薄土。山里安静了片刻，才传来小声商量：“莫非礼送得还不够？”她望着剩下的桃花，眉间仍有些怜惜：“树上这些，已够我看一春。往后只请我来看，不必请花下来。”猴儿们这才住手；她替落花寻了归处，也替未落的花省下了一场盛情。",
+      "expression": "upset",
+      "effects": ["petal_gather"]
+    },
+    {
+      "endingId": "daiyu_huaguoshan_end_2",
+      "storyId": "daiyu_huaguoshan",
+      "title": "树上留春",
+      "text": "黛玉先请猴儿们停手：“若真当我是客，便留着花，让我多看几日。”山里答应得震天响，又追问该送多少才算周到。她忍不住笑了：“一枝也别折，便是你们送我的。”枝头终于不再晃。花果山头一回发现，厚礼也能留在树上；她则立下一条护花约，只等满山春色慢慢兑现。",
+      "expression": "happy",
+      "effects": ["petal_fall"]
+    }
+  ]
+}

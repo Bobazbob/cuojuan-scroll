@@ -1,0 +1,18 @@
+﻿asset_id,target_relpath,kind,handoff,expected_dimensions,expected_alpha,delivered_version,status,production_owner,acceptance_owner,requirement
+daiyu_neutral,characters/daiyu/daiyu_neutral.png,character,H05/H06,768×1024,人物外 alpha=0；RGBA/sRGB,H06_characters_v01,已通过,B,A,全身中性母版；实际脚底中点；透明边
+daiyu_happy,characters/daiyu/daiyu_happy.png,character,H06,768×1024,人物外 alpha=0；RGBA/sRGB,H06_characters_v01,已通过,B,A,沿用同角色中性母版；实际脚底中点；头脚与母版差≤2px
+daiyu_upset,characters/daiyu/daiyu_upset.png,character,H06,768×1024,人物外 alpha=0；RGBA/sRGB,H06_characters_v01,已通过,B,A,沿用同角色中性母版；实际脚底中点；头脚与母版差≤2px
+wukong_neutral,characters/wukong/wukong_neutral.png,character,H05/H06,768×1024,人物外 alpha=0；RGBA/sRGB,H06_characters_v01,已通过,B,A,全身中性母版；实际脚底中点；透明边
+wukong_happy,characters/wukong/wukong_happy.png,character,H06,768×1024,人物外 alpha=0；RGBA/sRGB,H06_characters_v01,已通过,B,A,沿用同角色中性母版；实际脚底中点；头脚与母版差≤2px
+wukong_angry,characters/wukong/wukong_angry.png,character,H06,768×1024,人物外 alpha=0；RGBA/sRGB,H06_characters_v01,已通过,B,A,沿用同角色中性母版；实际脚底中点；头脚与母版差≤2px
+huaguoshan_layer1_back,scenes/huaguoshan/huaguoshan_layer1_back.png,scene_layer,H07,1600×900,所有像素 alpha=255；RGBA/sRGB,H07_huaguoshan_v01,已通过,B,A,天空与远景铺满画布
+huaguoshan_layer2_mid,scenes/huaguoshan/huaguoshan_layer2_mid.png,scene_layer,H07,1600×900,非内容区 alpha=0；RGBA/sRGB,H07_huaguoshan_v01,已通过,B,A,只含中景；与远景和地面接缝对齐
+huaguoshan_layer3_ground,scenes/huaguoshan/huaguoshan_layer3_ground.png,scene_layer,H07,1600×900,非内容区 alpha=0；RGBA/sRGB,H07_huaguoshan_v01,已通过,B,A,提供两处平缓站位；附两角色候选落点与试放比例
+huaguoshan_layer4_front,scenes/huaguoshan/huaguoshan_layer4_front.png,scene_layer,H07,1600×900,非内容区 alpha=0；RGBA/sRGB,H07_huaguoshan_v01,已通过,B,A,边缘局部遮挡；避开头脸与UI区
+daguanyuan_layer1_back,scenes/daguanyuan/daguanyuan_layer1_back.png,scene_layer,H08,1600×900,所有像素 alpha=255；RGBA/sRGB,H08_daguanyuan_v01,已通过,B,A,天空与远景铺满画布
+daguanyuan_layer2_mid,scenes/daguanyuan/daguanyuan_layer2_mid.png,scene_layer,H08,1600×900,非内容区 alpha=0；RGBA/sRGB,H08_daguanyuan_v01,已通过,B,A,只含中景；与远景和地面接缝对齐
+daguanyuan_layer3_ground,scenes/daguanyuan/daguanyuan_layer3_ground.png,scene_layer,H08,1600×900,非内容区 alpha=0；RGBA/sRGB,H08_daguanyuan_v01,已通过,B,A,提供两处平缓站位；附两角色候选落点与试放比例
+daguanyuan_layer4_front,scenes/daguanyuan/daguanyuan_layer4_front.png,scene_layer,H08,1600×900,非内容区 alpha=0；RGBA/sRGB,H08_daguanyuan_v01,已通过,B,A,边缘局部遮挡；避开头脸与UI区
+ui_scroll_frame,ui/scroll_frame.png,ui,H09,1600×900 或九宫格,PNG-32；透明底；无正文烘焙,H09_ui_v01,已通过,B,A,保留控件和画景留白；附实际尺寸与切片说明
+ui_paper_texture,ui/paper_texture.png,ui,H09,1600×900 或九宫格,PNG-32；透明底；无正文烘焙,H09_ui_v01,已通过,B,A,暖宣纸低对比；附实际尺寸与切片说明
+ui_ending_card_frame,ui/ending_card_frame.png,ui,H09,1600×900 或九宫格,PNG-32；透明底；无正文烘焙,H09_ui_v01,已通过,B,A,共用卡框；预留画面、标题和正文；附实际尺寸与切片说明

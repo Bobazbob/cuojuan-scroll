@@ -1,0 +1,3 @@
+命令：node C:\Users\Bobazbob\.codex\visualizations\2026\11\23\01a20887-0182-79c0-9f13-a738e9628281\outputs\H01_contract_v02\validate_stories.mjs --stories C:\Users\Bobazbob\Documents\ChatGPT\Qorder\work\b-deliveries\H04_stories_v01\stories.json --endings C:\Users\Bobazbob\Documents\ChatGPT\Qorder\work\b-deliveries\H04_stories_v01\endings.json
+退出码：0
+PASS（正式模式）：故事 4 / 结局 8，全部可自动检查项通过。

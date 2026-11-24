@@ -1,0 +1,5 @@
+﻿asset_id,kind,character,scene,expression,layer,file_relpath,width,height,has_alpha,foot_anchor_x,foot_anchor_y,status,notes
+huaguoshan_layer1_back,scene_layer,,huaguoshan,,back,scenes/huaguoshan/huaguoshan_layer1_back.png,1600,900,true,,,measured,实际图像工具生成；等比精确导出；RGBA/sRGB ICC；底层全不透明
+huaguoshan_layer2_mid,scene_layer,,huaguoshan,,mid,scenes/huaguoshan/huaguoshan_layer2_mid.png,1600,900,true,,,measured,实际图像工具生成的透明独立层；清除远处低alpha残留；实际叠合另看preview；未页面验收
+huaguoshan_layer3_ground,scene_layer,,huaguoshan,,ground,scenes/huaguoshan/huaguoshan_layer3_ground.png,1600,900,true,,,measured,实际图像工具生成的透明独立层；清除远处低alpha残留；实际叠合另看preview；未页面验收
+huaguoshan_layer4_front,scene_layer,,huaguoshan,,front,scenes/huaguoshan/huaguoshan_layer4_front.png,1600,900,true,,,measured,实际图像工具生成的透明独立层；清除远处低alpha残留；实际叠合另看preview；未页面验收

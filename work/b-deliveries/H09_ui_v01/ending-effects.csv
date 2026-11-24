@@ -1,0 +1,9 @@
+﻿endingId,expression,effects,runtime_status
+daiyu_huaguoshan_end_1,upset,petal_gather,由A运行实现与验证；B已检查引用
+daiyu_huaguoshan_end_2,happy,petal_fall,由A运行实现与验证；B已检查引用
+daiyu_daguanyuan_end_1,upset,petal_gather,由A运行实现与验证；B已检查引用
+daiyu_daguanyuan_end_2,happy,petal_fall,由A运行实现与验证；B已检查引用
+wukong_huaguoshan_end_1,neutral,gold_spark,由A运行实现与验证；B已检查引用
+wukong_huaguoshan_end_2,happy,clone_echo,由A运行实现与验证；B已检查引用
+wukong_daguanyuan_end_1,neutral,gold_spark,由A运行实现与验证；B已检查引用
+wukong_daguanyuan_end_2,happy,clone_echo,由A运行实现与验证；B已检查引用

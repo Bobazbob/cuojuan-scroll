@@ -1,0 +1,260 @@
+@font-face {
+  font-family: 'Cuojuan Serif';
+  src: url('../art/cuojuan-serif.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+}
+
+:root {
+  --paper-bg: #F4EBDD;
+  --ink: #342F2A;
+  --ink-2: #4A4640;
+  --teal: #3F6C61;
+  --teal-soft: #A8C3B0;
+  --peach: #D995A6;
+  --unroll: 1200ms cubic-bezier(.22, .61, .12, 1);
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  font-family: 'Cuojuan Serif', 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', STSong, SimSun, serif;
+  color: var(--ink);
+  background: #EDE3D3;
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: rgba(217, 149, 166, .32); color: var(--ink); }
+
+.page {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: max(12px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right))
+    max(12px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
+  background: var(--paper, none) center / cover, #EDE3D3;
+}
+.page[data-layout="below"] { justify-content: flex-start; }
+
+.scroll { position: relative; max-width: 100%; }
+.stage {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  container-type: inline-size;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.paper {
+  position: absolute;
+  inset: 0;
+  background: var(--paper, none) center / 100% 100%, var(--paper-bg);
+}
+
+/* 场景画境：整幅 1600×900 与人物共享同一变换。封卷时从中缝合拢。 */
+.art {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 50% 0 50%);
+  transition: clip-path var(--unroll);
+}
+.layer, .effects {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.layer:not([src]), .layer[src=""] { visibility: hidden; }
+.figure {
+  position: absolute;
+  pointer-events: none;
+  will-change: opacity, transform;
+}
+.figure[hidden], .shadow[hidden] { display: none; }
+.figure.enter { animation: figure-in 240ms cubic-bezier(.2, .7, .2, 1) both; }
+#figure-old.fade-out { animation: fade-out 360ms ease-out forwards; }
+@keyframes figure-in { from { opacity: 0; transform: scale(.985); } to { opacity: 1; transform: none; } }
+@keyframes fade-out { to { opacity: 0; } }
+.shadow {
+  position: absolute;
+  width: 10.5%;
+  height: 2.4%;
+  transform: translate(-50%, -46%);
+  background: radial-gradient(closest-side, rgba(74, 58, 42, .2), rgba(74, 58, 42, .07) 60%, rgba(74, 58, 42, 0));
+  pointer-events: none;
+}
+
+/* 卷轴：同一整幅 PNG 分左右两半，展开时轴杆外移、横杆随之露出。 */
+.roller {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transition: clip-path var(--unroll), transform var(--unroll);
+}
+.roller:not([src]) { visibility: hidden; }
+.roller-left { clip-path: inset(0 95% 0 0); transform: translateX(45%); }
+.roller-right { clip-path: inset(0 0 0 95%); transform: translateX(-45%); }
+
+.page:is([data-phase="character"], [data-phase="placement"], [data-phase="intro"],
+  [data-phase="choice"], [data-phase="ending"]) :is(.art) { clip-path: inset(0); }
+.page:is([data-phase="character"], [data-phase="placement"], [data-phase="intro"],
+  [data-phase="choice"], [data-phase="ending"]) .roller-left { clip-path: inset(0 50% 0 0); transform: none; }
+.page:is([data-phase="character"], [data-phase="placement"], [data-phase="intro"],
+  [data-phase="choice"], [data-phase="ending"]) .roller-right { clip-path: inset(0 0 0 50%); transform: none; }
+
+/* 题签：封卷时压在合拢的轴上。 */
+.label {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  padding: 1.6cqw .7cqw;
+  background: #F6EEE1;
+  border: 1px solid rgba(52, 47, 42, .42);
+  outline: 1px solid rgba(52, 47, 42, .18);
+  outline-offset: -5px;
+  box-shadow: 0 1px 3px rgba(60, 44, 30, .16);
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  font-size: 3.4cqw;
+  letter-spacing: .5em;
+  line-height: 1;
+  color: var(--ink);
+  pointer-events: none;
+  transition: opacity 400ms ease-out;
+}
+.label span { margin-block-end: -.5em; }
+.page:not([data-phase="cover"]):not([data-phase="scene"]):not([data-phase="loading"]) .label { opacity: 0; }
+
+/* 落点：贴地的细墨椭圆，点击范围大于描边。 */
+.drop {
+  position: absolute;
+  width: max(96px, 7cqw);
+  height: max(72px, 4.6cqw);
+  transform: translate(-50%, -50%);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+.drop[hidden] { display: none; }
+.drop span {
+  width: max(64px, 5.2cqw);
+  height: max(22px, 1.8cqw);
+  border-radius: 50%;
+  border: 1.5px solid var(--teal);
+  box-shadow: inset 0 0 0 4px rgba(168, 195, 176, .32), 0 0 0 1px rgba(244, 235, 221, .6);
+  background: rgba(168, 195, 176, .18);
+  animation: breathe 2.4s ease-in-out infinite;
+}
+.drop:hover span { background: rgba(168, 195, 176, .36); }
+.drop:focus-visible { outline: none; }
+.drop:focus-visible span { box-shadow: inset 0 0 0 4px rgba(168, 195, 176, .4), 0 0 0 3px var(--teal); }
+@keyframes breathe { 50% { transform: scale(1.08); opacity: .72; } }
+
+.tools {
+  position: absolute;
+  right: 6%;
+  top: 7.1%;
+  display: flex;
+  gap: 8px;
+}
+.page:is([data-phase="loading"], [data-phase="cover"]) .tools { display: none; }
+
+/* 控件：轻纸面、细墨线，双选项等权。 */
+.ink {
+  font: inherit;
+  font-size: 18px;
+  letter-spacing: .08em;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 8px 22px;
+  color: var(--ink);
+  background: rgba(250, 245, 236, .9);
+  border: 1px solid rgba(52, 47, 42, .5);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 160ms ease-out, border-color 160ms ease-out, color 160ms ease-out;
+}
+.ink:hover { background: rgba(214, 228, 216, .95); border-color: var(--teal); color: #23443C; }
+.ink:active { transform: translateY(1px); }
+.ink:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+.ink:disabled { opacity: .55; cursor: default; }
+.ink.choice { min-width: 9.5em; }
+.tool { font-size: 16px; padding: 6px 16px; background: rgba(250, 245, 236, .82); }
+
+/* 阅读区：固定页面字号，不随场景缩小。 */
+.reader {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: var(--ink);
+}
+.page[data-layout="inside"] .reader {
+  position: absolute;
+  padding: 0 2.5%;
+  background: rgba(244, 235, 221, .78);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent),
+    linear-gradient(to bottom, transparent, #000 24%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent),
+    linear-gradient(to bottom, transparent, #000 24%);
+  mask-composite: intersect;
+}
+.page[data-layout="inside"]:is([data-phase="cover"], [data-phase="loading"]) .reader { background: none; }
+.reader-copy { flex: 1; min-width: 0; }
+.reader-title {
+  margin: 0 0 2px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: .16em;
+  color: var(--teal);
+}
+.reader-title[hidden] { display: none; }
+.reader-text, .measure {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.7;
+  letter-spacing: .02em;
+  text-wrap: pretty;
+}
+.reader-actions { display: flex; gap: 16px; flex-shrink: 0; }
+.page[data-phase="choice"] .reader { flex-direction: column; justify-content: center; gap: 8px; }
+.page[data-phase="choice"] .reader-copy { flex: none; text-align: center; }
+.page:is([data-phase="cover"], [data-phase="loading"]) .reader { justify-content: center; }
+.page:is([data-phase="cover"], [data-phase="loading"]) .reader-copy { flex: none; }
+
+.measure {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.page[data-layout="below"] .reader {
+  width: 100%;
+  margin-top: 14px;
+  padding: 16px 20px;
+  background: rgba(246, 239, 228, .92);
+  border-top: 1px solid rgba(52, 47, 42, .28);
+  border-bottom: 1px solid rgba(52, 47, 42, .28);
+  flex-wrap: wrap;
+}
+.page[data-layout="below"] .reader-text, .page[data-layout="below"] .measure { font-size: 18px; }
+.page[data-layout="below"] .reader-actions { flex-wrap: wrap; }
+
+@media (prefers-reduced-motion: reduce) {
+  .art, .roller, .label { transition: none; }
+  .figure.enter, #figure-old.fade-out, .drop span { animation: none; }
+  #figure-old.fade-out { opacity: 0; }
+}

@@ -1,0 +1,178 @@
+[
+  {
+    "file": "characters/daiyu/daiyu_neutral.png",
+    "low_alpha_residue_removed": 1620,
+    "visible_alpha_mask_unchanged": true,
+    "foot_anchor_unchanged": true
+  },
+  {
+    "file": "characters/wukong/wukong_neutral.png",
+    "low_alpha_residue_removed": 5766,
+    "visible_alpha_mask_unchanged": true,
+    "foot_anchor_unchanged": true
+  },
+  {
+    "file": "characters/daiyu/daiyu_happy.png",
+    "registration_translation": [
+      0.28190019726753235,
+      0.03515929356217384
+    ],
+    "registration_score": 0.9800543290846656,
+    "outside_face_identical": true,
+    "alpha_identical": true,
+    "head_foot_shift_pixels": 0,
+    "face_polygon": [
+      [
+        348,
+        143
+      ],
+      [
+        395,
+        136
+      ],
+      [
+        417,
+        150
+      ],
+      [
+        419,
+        188
+      ],
+      [
+        403,
+        212
+      ],
+      [
+        369,
+        207
+      ],
+      [
+        347,
+        184
+      ]
+    ]
+  },
+  {
+    "file": "characters/daiyu/daiyu_upset.png",
+    "registration_translation": [
+      0.7288157939910889,
+      0.3047265112400055
+    ],
+    "registration_score": 0.9634777939530889,
+    "outside_face_identical": true,
+    "alpha_identical": true,
+    "head_foot_shift_pixels": 0,
+    "face_polygon": [
+      [
+        348,
+        143
+      ],
+      [
+        395,
+        136
+      ],
+      [
+        417,
+        150
+      ],
+      [
+        419,
+        188
+      ],
+      [
+        403,
+        212
+      ],
+      [
+        369,
+        207
+      ],
+      [
+        347,
+        184
+      ]
+    ]
+  },
+  {
+    "file": "characters/wukong/wukong_happy.png",
+    "registration_translation": [
+      0.6725898385047913,
+      0.0776631161570549
+    ],
+    "registration_score": 0.9515523646658531,
+    "outside_face_identical": true,
+    "alpha_identical": true,
+    "head_foot_shift_pixels": 0,
+    "face_polygon": [
+      [
+        382,
+        186
+      ],
+      [
+        435,
+        182
+      ],
+      [
+        468,
+        199
+      ],
+      [
+        474,
+        240
+      ],
+      [
+        454,
+        278
+      ],
+      [
+        413,
+        276
+      ],
+      [
+        392,
+        248
+      ]
+    ]
+  },
+  {
+    "file": "characters/wukong/wukong_angry.png",
+    "registration_translation": [
+      0.09159684926271439,
+      0.13386285305023193
+    ],
+    "registration_score": 0.9664538662594812,
+    "outside_face_identical": true,
+    "alpha_identical": true,
+    "head_foot_shift_pixels": 0,
+    "face_polygon": [
+      [
+        382,
+        186
+      ],
+      [
+        435,
+        182
+      ],
+      [
+        468,
+        199
+      ],
+      [
+        474,
+        240
+      ],
+      [
+        454,
+        278
+      ],
+      [
+        413,
+        276
+      ],
+      [
+        392,
+        248
+      ]
+    ]
+  }
+]

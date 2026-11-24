@@ -1,0 +1,34 @@
+[
+  {
+    "asset_id": "daiyu_neutral",
+    "kind": "character",
+    "character": "daiyu",
+    "scene": "",
+    "expression": "neutral",
+    "layer": "",
+    "file_relpath": "characters/daiyu/daiyu_neutral.png",
+    "width": 768,
+    "height": 1024,
+    "has_alpha": "true",
+    "foot_anchor_x": "0.499",
+    "foot_anchor_y": "0.980",
+    "status": "measured",
+    "notes": "RGBA真透明/sRGB ICC；实测鞋履接触带中点(383.5,1004)；边缘去污染3132像素；未游戏试放"
+  },
+  {
+    "asset_id": "wukong_neutral",
+    "kind": "character",
+    "character": "wukong",
+    "scene": "",
+    "expression": "neutral",
+    "layer": "",
+    "file_relpath": "characters/wukong/wukong_neutral.png",
+    "width": 768,
+    "height": 1024,
+    "has_alpha": "true",
+    "foot_anchor_x": "0.500",
+    "foot_anchor_y": "0.979",
+    "status": "measured",
+    "notes": "RGBA真透明/sRGB ICC；实测鞋履接触带中点(384.0,1003)；边缘去污染12159像素；未游戏试放"
+  }
+]
