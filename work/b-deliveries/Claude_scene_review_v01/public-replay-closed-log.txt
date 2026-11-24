@@ -1,0 +1,1 @@
+PUBLIC: replay during effect -> 1400ms -> cover, figure hidden, ending null, art clip=inset(0px 50%). Assertions passed.

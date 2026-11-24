@@ -191,16 +191,23 @@ body {
 .ink.choice { min-width: 9.5em; }
 .tool { font-size: 16px; padding: 6px 16px; background: rgba(250, 245, 236, .82); }
 
-/* 阅读区：固定页面字号，不随场景缩小。 */
+/* 阅读区：固定页面字号，不随场景缩小。 V01修复：遮罩仅作用于背景，不淡化内容。 */
 .reader {
   display: flex;
   align-items: center;
   gap: 24px;
   color: var(--ink);
+  position: relative;
+  z-index: 1;
 }
 .page[data-layout="inside"] .reader {
   position: absolute;
   padding: 0 2.5%;
+}
+.page[data-layout="inside"] .reader::before {
+  content: '';
+  position: absolute;
+  inset: 0;
   background: rgba(244, 235, 221, .78);
   -webkit-mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent),
     linear-gradient(to bottom, transparent, #000 24%);
@@ -208,8 +215,10 @@ body {
   mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent),
     linear-gradient(to bottom, transparent, #000 24%);
   mask-composite: intersect;
+  pointer-events: none;
+  z-index: -1;
 }
-.page[data-layout="inside"]:is([data-phase="cover"], [data-phase="loading"]) .reader { background: none; }
+.page[data-layout="inside"]:is([data-phase="cover"], [data-phase="loading"]) .reader::before { display: none; }
 .reader-copy { flex: 1; min-width: 0; }
 .reader-title {
   margin: 0 0 2px;
@@ -248,10 +257,26 @@ body {
   background: rgba(246, 239, 228, .92);
   border-top: 1px solid rgba(52, 47, 42, .28);
   border-bottom: 1px solid rgba(52, 47, 42, .28);
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.page[data-layout="below"] .reader-text, .page[data-layout="below"] .measure { font-size: 18px; }
+.page[data-layout="below"][data-narrow-layout="no"] .reader { flex-wrap: wrap; flex-direction: row; }
+.page[data-layout="below"] .reader-copy { flex: 1 100%; }
 .page[data-layout="below"] .reader-actions { flex-wrap: wrap; }
+.page[data-layout="below"] .reader-text, .page[data-layout="below"] .measure { font-size: 18px; }
+.page[data-layout="below"][data-narrow-layout="yes"] .reader-actions { flex-direction: column; width: 100%; }
+.page[data-layout="below"][data-narrow-layout="yes"] .reader-actions button { width: 100%; }
+
+/* V05修复：窄屏重玩移出画境 */
+.page[data-narrowLayout="yes"] .tools { 
+  position: static;
+  margin-top: 12px;
+  justify-content: center;
+  width: 100%;
+}
+.page[data-narrowLayout="yes"] .tools .tool {
+  min-width: max(44px, 90px);
+}
 
 @media (prefers-reduced-motion: reduce) {
   .art, .roller, .label { transition: none; }

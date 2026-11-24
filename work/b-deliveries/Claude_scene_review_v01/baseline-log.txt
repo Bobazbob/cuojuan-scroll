@@ -1,0 +1,51 @@
+== desktop 1600x900 layout=inside
+shot 01_cover_bury phase=cover
+shot 02_unrolled phase=character
+miss hint: �����̨�ϴ�Բ������㡣
+shot 03_placement phase=placement
+shot 04_intro_bury_1 phase=intro
+shot 05_choice_bury phase=choice
+options: ['�Ȱ����仨', '���»���Լ']
+shot 06_ending_bury_effect phase=ending
+ending daiyu_huaguoshan_end_1 expr=upset char=daiyu_upset figure=daiyu_upset-DCKpCMHD.png effects=petal_gather
+shot 07_ending_bury_1 phase=ending
+shot 07_ending_bury_2 phase=ending
+figure foot in scene px: {"footX": 999.9892549877242, "footY": 674.9884463028169, "h": 503.9887764084507}
+replay -> cover runId=2
+shot 01_cover_protect phase=cover
+shot 02_unrolled phase=character
+miss hint: �����̨�ϴ�Բ������㡣
+shot 03_placement phase=placement
+shot 04_intro_protect_1 phase=intro
+shot 05_choice_protect phase=choice
+options: ['�Ȱ����仨', '���»���Լ']
+shot 06_ending_protect_effect phase=ending
+ending daiyu_huaguoshan_end_2 expr=happy char=daiyu_happy figure=daiyu_happy-CWQc98Kv.png effects=petal_fall
+shot 07_ending_protect_1 phase=ending
+shot 07_ending_protect_2 phase=ending
+figure foot in scene px: {"footX": 999.9892549877242, "footY": 674.9884463028169, "h": 503.9887764084507}
+replay -> cover runId=3
+== laptop 1280x720 layout=below
+shot 01_cover_bury phase=cover
+shot 02_unrolled phase=character
+miss hint: �����̨�ϴ�Բ������㡣
+shot 03_placement phase=placement
+shot 04_intro_bury_1 phase=intro
+shot 05_choice_bury phase=choice
+options: ['�Ȱ����仨', '���»���Լ']
+shot 06_ending_bury_effect phase=ending
+ending daiyu_huaguoshan_end_1 expr=upset char=daiyu_upset figure=daiyu_upset-DCKpCMHD.png effects=petal_gather
+shot 07_ending_bury_1 phase=ending
+figure foot in scene px: {"footX": 999.9856950431034, "footY": 674.96875, "h": 503.98706896551727}
+replay -> cover runId=2
+shot 01_cover_protect phase=cover
+miss hint: �����̨�ϴ�Բ������㡣
+shot x_intro_protect_1 phase=intro
+shot 05_choice_protect phase=choice
+options: ['�Ȱ����仨', '���»���Լ']
+shot 06_ending_protect_effect phase=ending
+ending daiyu_huaguoshan_end_2 expr=happy char=daiyu_happy figure=daiyu_happy-CWQc98Kv.png effects=petal_fall
+shot 07_ending_protect_1 phase=ending
+figure foot in scene px: {"footX": 999.9856950431034, "footY": 674.96875, "h": 503.98706896551727}
+replay -> cover runId=3
+page errors: 0

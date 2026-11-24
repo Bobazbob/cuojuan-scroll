@@ -1,0 +1,240 @@
+{
+  "fileComparisons": [
+    {
+      "path": "assets/daiyuHuaguoshan-DjLE1Boo.js",
+      "publicHTTP": 200,
+      "localHTTP": 200,
+      "sha256": "098feae4baf0a0e5c8600411062b9eba8fce45c5fbc5ee7eac054918182ae318",
+      "publicEqualsLocal": true,
+      "publicEqualsDist": true
+    },
+    {
+      "path": "assets/modulepreload-polyfill-B5Qt9EMX.js",
+      "publicHTTP": 200,
+      "localHTTP": 200,
+      "sha256": "d2a32840421496e872ade591618d2fa5c33797605d1aec04301717e5a90757d0",
+      "publicEqualsLocal": true,
+      "publicEqualsDist": true
+    },
+    {
+      "path": "assets/assets-Cwmrctrm.js",
+      "publicHTTP": 200,
+      "localHTTP": 200,
+      "sha256": "9fbb8fbb93ea4086adbeeb8a34c9da396aad85926de12030a2a8a6ddb9201c17",
+      "publicEqualsLocal": true,
+      "publicEqualsDist": true
+    },
+    {
+      "path": "assets/daiyuHuaguoshan-jubwWjQj.css",
+      "publicHTTP": 200,
+      "localHTTP": 200,
+      "sha256": "721212d97461b2b75d41e42e37eb2e67401980ecadf1353cf82f7f19050df871",
+      "publicEqualsLocal": true,
+      "publicEqualsDist": true
+    },
+    {
+      "path": "assets/huaguoshan_layer1_back-ubjkSV-P.png",
+      "publicHTTP": 200,
+      "localHTTP": 200,
+      "sha256": "2aec6814280dea74156edf5dd2a3f1232bdb50d0ff68f218acf2788bd4197150",
+      "publicEqualsLocal": true,
+      "publicEqualsDist": true
+    },
+    {
+      "path": "assets/huaguoshan_layer2_mid-CVErkcZb.png",
+      "publicHTTP": 200,
+      "localHTTP": 200,
+      "sha256": "66b155a9e2f27cc9d9ecc6f4e6e2dabce584a7186b16d726bc0fffc0e1d4d804",
+      "publicEqualsLocal": true,
+      "publicEqualsDist": true
+    },
+    {
+      "path": "assets/huaguoshan_layer3_ground-DUC-Ykkl.png",
+      "publicHTTP": 200,
+      "localHTTP": 200,
+      "sha256": "901d3f87c20b54c3713b3ed65c893a226340487da76e39aad2a6de34634c0b27",
+      "publicEqualsLocal": true,
+      "publicEqualsDist": true
+    },
+    {
+      "path": "assets/huaguoshan_layer4_front-5lqdHsPn.png",
+      "publicHTTP": 200,
+      "localHTTP": 200,
+      "sha256": "4327378cf4d6a1dc03d81e76fc4ea13572fb7dddbf9426c1fdb6df138e2f3595",
+      "publicEqualsLocal": true,
+      "publicEqualsDist": true
+    },
+    {
+      "path": "assets/daiyu_neutral-DTrXREK2.png",
+      "publicHTTP": 200,
+      "localHTTP": 200,
+      "sha256": "c55ef39bece9f4be883e848e96d684b164de2d1663d3efd945e79a2713a56f37",
+      "publicEqualsLocal": true,
+      "publicEqualsDist": true
+    },
+    {
+      "path": "assets/daiyu_happy-CWQc98Kv.png",
+      "publicHTTP": 200,
+      "localHTTP": 200,
+      "sha256": "7d2a238503e58b876750c901fc7b8ac52ed8e9c74c8e0c07a5f8699bfca14f84",
+      "publicEqualsLocal": true,
+      "publicEqualsDist": true
+    },
+    {
+      "path": "assets/daiyu_upset-DCKpCMHD.png",
+      "publicHTTP": 200,
+      "localHTTP": 200,
+      "sha256": "086ef2ac2296297d51b9f2e3c204e15ea42e716a64c661a4df981bb8de538bc8",
+      "publicEqualsLocal": true,
+      "publicEqualsDist": true
+    },
+    {
+      "path": "assets/scroll_frame-DoH9zfN3.png",
+      "publicHTTP": 200,
+      "localHTTP": 200,
+      "sha256": "4daa10f8a71b654210b8817a70134baeedeaa6ff46bc3bdf7afeae599d3b65de",
+      "publicEqualsLocal": true,
+      "publicEqualsDist": true
+    },
+    {
+      "path": "assets/paper_texture-DOYbq_Wf.png",
+      "publicHTTP": 200,
+      "localHTTP": 200,
+      "sha256": "461069d6ab89cab829e2379e8a6e1235a7adef57722da1ff61694a34cd31d405",
+      "publicEqualsLocal": true,
+      "publicEqualsDist": true
+    },
+    {
+      "path": "assets/cuojuan-serif-DEi3yg87.ttf",
+      "publicHTTP": 200,
+      "localHTTP": 200,
+      "sha256": "2c3e7170fd4ba65400180852afe1368470a2361cccac5c2e49695f5cd4c9a994",
+      "publicEqualsLocal": true,
+      "publicEqualsDist": true
+    }
+  ],
+  "layoutDetails": [
+    {
+      "innerWidth": 1600,
+      "innerHeight": 900,
+      "clientWidth": 1600,
+      "stageStyle": "height: 852px;",
+      "scrollStyle": "width: 1514.67px;",
+      "pagePadding": "12px",
+      "art": {
+        "x": 42.671875,
+        "y": 24,
+        "w": 1514.65625,
+        "h": 852
+      },
+      "artRatio": 1.7777655516431925,
+      "figure": {
+        "x": 810.765625,
+        "y": 195.421875,
+        "w": 357.828125,
+        "h": 477.109375
+      },
+      "figureRatio": 0.7499918126739806,
+      "distortionPercent": 0.0006877248000414227,
+      "reader": {
+        "x": 133.546875,
+        "y": 707.484375,
+        "w": 1332.890625,
+        "h": 109.8125
+      },
+      "text": {
+        "x": 171.40625,
+        "y": 740.984375,
+        "w": 1148.28125,
+        "h": 68
+      },
+      "fontSize": "20px",
+      "lineHeight": "34px",
+      "actualLines": 2,
+      "mask": "linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 7%, rgb(0, 0, 0) 93%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 24%)"
+    },
+    {
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "clientWidth": 390,
+      "stageStyle": "height: 210.6px;",
+      "scrollStyle": "width: 374.4px;",
+      "pagePadding": "12px",
+      "art": {
+        "x": 12,
+        "y": 12,
+        "w": 366,
+        "h": 210.59375
+      },
+      "artRatio": 1.737943315031904,
+      "figure": {
+        "x": 197.59375,
+        "y": 54.359375,
+        "w": 86.453125,
+        "h": 117.921875
+      },
+      "figureRatio": 0.7331389956274016,
+      "distortionPercent": 2.2920461445051554,
+      "reader": {
+        "x": 12,
+        "y": 236.59375,
+        "w": 366,
+        "h": 212.15625
+      },
+      "text": {
+        "x": 32,
+        "y": 278.78125,
+        "w": 217.109375,
+        "h": 152.96875
+      },
+      "fontSize": "18px",
+      "lineHeight": "30.6px",
+      "actualLines": 4.998978758169934,
+      "mask": "none"
+    },
+    {
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "clientWidth": 320,
+      "stageStyle": "height: 172.8px;",
+      "scrollStyle": "width: 307.2px;",
+      "pagePadding": "12px",
+      "art": {
+        "x": 12,
+        "y": 12,
+        "w": 296,
+        "h": 172.796875
+      },
+      "artRatio": 1.7129939415860385,
+      "figure": {
+        "x": 162.09375,
+        "y": 46.765625,
+        "w": 69.921875,
+        "h": 96.765625
+      },
+      "figureRatio": 0.722590020991442,
+      "distortionPercent": 3.7819069069068956,
+      "reader": {
+        "x": 12,
+        "y": 198.796875,
+        "w": 296,
+        "h": 242.75
+      },
+      "text": {
+        "x": 32,
+        "y": 240.984375,
+        "w": 147.109375,
+        "h": 183.5625
+      },
+      "fontSize": "18px",
+      "lineHeight": "30.6px",
+      "actualLines": 5.998774509803921,
+      "mask": "none"
+    }
+  ],
+  "root": {
+    "url": "https://bobazbob.github.io/cuojuan-scroll/",
+    "title": "错卷 · 花果山篇",
+    "h03Entry": true
+  }
+}

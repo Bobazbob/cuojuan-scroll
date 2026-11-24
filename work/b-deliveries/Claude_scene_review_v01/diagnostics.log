@@ -1,0 +1,128 @@
+{
+  "root": {
+    "url": "https://bobazbob.github.io/cuojuan-scroll/",
+    "title": "错卷 · 花果山篇",
+    "h03Entry": true
+  },
+  "comparisons": 14,
+  "allSame": true,
+  "layouts": [
+    {
+      "innerWidth": 1600,
+      "innerHeight": 900,
+      "clientWidth": 1600,
+      "stageStyle": "height: 852px;",
+      "scrollStyle": "width: 1514.67px;",
+      "pagePadding": "12px",
+      "art": {
+        "x": 42.671875,
+        "y": 24,
+        "w": 1514.65625,
+        "h": 852
+      },
+      "artRatio": 1.7777655516431925,
+      "figure": {
+        "x": 810.765625,
+        "y": 195.421875,
+        "w": 357.828125,
+        "h": 477.109375
+      },
+      "figureRatio": 0.7499918126739806,
+      "distortionPercent": 0.0006877248000414227,
+      "reader": {
+        "x": 133.546875,
+        "y": 707.484375,
+        "w": 1332.890625,
+        "h": 109.8125
+      },
+      "text": {
+        "x": 171.40625,
+        "y": 740.984375,
+        "w": 1148.28125,
+        "h": 68
+      },
+      "fontSize": "20px",
+      "lineHeight": "34px",
+      "actualLines": 2,
+      "mask": "linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 7%, rgb(0, 0, 0) 93%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 24%)"
+    },
+    {
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "clientWidth": 390,
+      "stageStyle": "height: 210.6px;",
+      "scrollStyle": "width: 374.4px;",
+      "pagePadding": "12px",
+      "art": {
+        "x": 12,
+        "y": 12,
+        "w": 366,
+        "h": 210.59375
+      },
+      "artRatio": 1.737943315031904,
+      "figure": {
+        "x": 197.59375,
+        "y": 54.359375,
+        "w": 86.453125,
+        "h": 117.921875
+      },
+      "figureRatio": 0.7331389956274016,
+      "distortionPercent": 2.2920461445051554,
+      "reader": {
+        "x": 12,
+        "y": 236.59375,
+        "w": 366,
+        "h": 212.15625
+      },
+      "text": {
+        "x": 32,
+        "y": 278.78125,
+        "w": 217.109375,
+        "h": 152.96875
+      },
+      "fontSize": "18px",
+      "lineHeight": "30.6px",
+      "actualLines": 4.998978758169934,
+      "mask": "none"
+    },
+    {
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "clientWidth": 320,
+      "stageStyle": "height: 172.8px;",
+      "scrollStyle": "width: 307.2px;",
+      "pagePadding": "12px",
+      "art": {
+        "x": 12,
+        "y": 12,
+        "w": 296,
+        "h": 172.796875
+      },
+      "artRatio": 1.7129939415860385,
+      "figure": {
+        "x": 162.09375,
+        "y": 46.765625,
+        "w": 69.921875,
+        "h": 96.765625
+      },
+      "figureRatio": 0.722590020991442,
+      "distortionPercent": 3.7819069069068956,
+      "reader": {
+        "x": 12,
+        "y": 198.796875,
+        "w": 296,
+        "h": 242.75
+      },
+      "text": {
+        "x": 32,
+        "y": 240.984375,
+        "w": 147.109375,
+        "h": 183.5625
+      },
+      "fontSize": "18px",
+      "lineHeight": "30.6px",
+      "actualLines": 5.998774509803921,
+      "mask": "none"
+    }
+  ]
+}

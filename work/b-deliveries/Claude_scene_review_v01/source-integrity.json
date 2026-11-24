@@ -1,0 +1,83 @@
+[
+  {
+    "asset_id": "daiyu_neutral",
+    "file": "asset-library\\characters\\daiyu\\daiyu_neutral.png",
+    "acceptedHash": "c55ef39bece9f4be883e848e96d684b164de2d1663d3efd945e79a2713a56f37",
+    "actualHash": "c55ef39bece9f4be883e848e96d684b164de2d1663d3efd945e79a2713a56f37",
+    "sameAsB": true,
+    "deployment": "assets/daiyu_neutral-DTrXREK2.png",
+    "sameAsDeployment": true
+  },
+  {
+    "asset_id": "daiyu_happy",
+    "file": "asset-library\\characters\\daiyu\\daiyu_happy.png",
+    "acceptedHash": "7d2a238503e58b876750c901fc7b8ac52ed8e9c74c8e0c07a5f8699bfca14f84",
+    "actualHash": "7d2a238503e58b876750c901fc7b8ac52ed8e9c74c8e0c07a5f8699bfca14f84",
+    "sameAsB": true,
+    "deployment": "assets/daiyu_happy-CWQc98Kv.png",
+    "sameAsDeployment": true
+  },
+  {
+    "asset_id": "daiyu_upset",
+    "file": "asset-library\\characters\\daiyu\\daiyu_upset.png",
+    "acceptedHash": "086ef2ac2296297d51b9f2e3c204e15ea42e716a64c661a4df981bb8de538bc8",
+    "actualHash": "086ef2ac2296297d51b9f2e3c204e15ea42e716a64c661a4df981bb8de538bc8",
+    "sameAsB": true,
+    "deployment": "assets/daiyu_upset-DCKpCMHD.png",
+    "sameAsDeployment": true
+  },
+  {
+    "asset_id": "huaguoshan_layer1_back",
+    "file": "asset-library\\scenes\\huaguoshan\\huaguoshan_layer1_back.png",
+    "acceptedHash": "2aec6814280dea74156edf5dd2a3f1232bdb50d0ff68f218acf2788bd4197150",
+    "actualHash": "2aec6814280dea74156edf5dd2a3f1232bdb50d0ff68f218acf2788bd4197150",
+    "sameAsB": true,
+    "deployment": "assets/huaguoshan_layer1_back-ubjkSV-P.png",
+    "sameAsDeployment": true
+  },
+  {
+    "asset_id": "huaguoshan_layer2_mid",
+    "file": "asset-library\\scenes\\huaguoshan\\huaguoshan_layer2_mid.png",
+    "acceptedHash": "66b155a9e2f27cc9d9ecc6f4e6e2dabce584a7186b16d726bc0fffc0e1d4d804",
+    "actualHash": "66b155a9e2f27cc9d9ecc6f4e6e2dabce584a7186b16d726bc0fffc0e1d4d804",
+    "sameAsB": true,
+    "deployment": "assets/huaguoshan_layer2_mid-CVErkcZb.png",
+    "sameAsDeployment": true
+  },
+  {
+    "asset_id": "huaguoshan_layer3_ground",
+    "file": "asset-library\\scenes\\huaguoshan\\huaguoshan_layer3_ground.png",
+    "acceptedHash": "901d3f87c20b54c3713b3ed65c893a226340487da76e39aad2a6de34634c0b27",
+    "actualHash": "901d3f87c20b54c3713b3ed65c893a226340487da76e39aad2a6de34634c0b27",
+    "sameAsB": true,
+    "deployment": "assets/huaguoshan_layer3_ground-DUC-Ykkl.png",
+    "sameAsDeployment": true
+  },
+  {
+    "asset_id": "huaguoshan_layer4_front",
+    "file": "asset-library\\scenes\\huaguoshan\\huaguoshan_layer4_front.png",
+    "acceptedHash": "4327378cf4d6a1dc03d81e76fc4ea13572fb7dddbf9426c1fdb6df138e2f3595",
+    "actualHash": "4327378cf4d6a1dc03d81e76fc4ea13572fb7dddbf9426c1fdb6df138e2f3595",
+    "sameAsB": true,
+    "deployment": "assets/huaguoshan_layer4_front-5lqdHsPn.png",
+    "sameAsDeployment": true
+  },
+  {
+    "asset_id": "ui_scroll_frame",
+    "file": "asset-library\\ui\\scroll_frame.png",
+    "acceptedHash": "4daa10f8a71b654210b8817a70134baeedeaa6ff46bc3bdf7afeae599d3b65de",
+    "actualHash": "4daa10f8a71b654210b8817a70134baeedeaa6ff46bc3bdf7afeae599d3b65de",
+    "sameAsB": true,
+    "deployment": "assets/scroll_frame-DoH9zfN3.png",
+    "sameAsDeployment": true
+  },
+  {
+    "asset_id": "ui_paper_texture",
+    "file": "asset-library\\ui\\paper_texture.png",
+    "acceptedHash": "461069d6ab89cab829e2379e8a6e1235a7adef57722da1ff61694a34cd31d405",
+    "actualHash": "461069d6ab89cab829e2379e8a6e1235a7adef57722da1ff61694a34cd31d405",
+    "sameAsB": true,
+    "deployment": "assets/paper_texture-DOYbq_Wf.png",
+    "sameAsDeployment": true
+  }
+]

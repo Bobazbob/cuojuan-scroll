@@ -168,16 +168,16 @@ function renderReader(state: Snapshot) {
   switch (state.phase) {
     case 'cover':
       setCopy('', '诗中人，入山来。');
-      button('展开画卷', () => game.open(), 'ink primary').dataset.focus = '';
+      button('展开画卷', () => game.open(), 'ink primary').dataset.focus = 'true';
       break;
     case 'scene':
       setCopy('选一处入卷', '翻开花果山这一页。');
-      if (game.availableScenes().includes(SCENE)) button('花果山', () => game.selectScene(SCENE)).dataset.focus = '';
+      if (game.availableScenes().includes(SCENE)) button('花果山', () => game.selectScene(SCENE)).dataset.focus = 'true';
       break;
     case 'character':
       setCopy('谁来到花果山？', '选定人物，再把她放进画卷。');
       if (state.sceneId && game.availableCharacters(state.sceneId).includes(CHARACTER)) {
-        button('林黛玉', () => game.selectCharacter(CHARACTER)).dataset.focus = '';
+        button('林黛玉', () => game.selectCharacter(CHARACTER)).dataset.focus = 'true';
       }
       break;
     case 'placement':
@@ -192,11 +192,16 @@ function renderReader(state: Snapshot) {
       readerText.textContent = pages[pageIndex];
       const last = pageIndex >= pages.length - 1;
       if (!last) {
-        button('继续', () => { pageIndex++; renderReader(game.getState()); }).dataset.focus = '';
+        button('继续', () => { 
+          pageIndex++; 
+          renderReader(game.getState());
+          // V04修复：翻页后焦点回到新按钮
+          actions.querySelector<HTMLElement>('button')?.focus({ preventScroll: true });
+        }).dataset.focus = 'true';
       } else if (state.phase === 'intro') {
-        button('继续', () => game.showChoices()).dataset.focus = '';
+        button('继续', () => game.showChoices()).dataset.focus = 'true';
       } else {
-        button('重玩', replay, 'ink primary').dataset.focus = '';
+        button('重玩', replay, 'ink primary').dataset.focus = 'true';
       }
       break;
     }
@@ -205,10 +210,19 @@ function renderReader(state: Snapshot) {
       for (const option of state.options) {
         button(option.label, () => game.choose(option.optionId), 'ink choice').dataset.optionId = option.optionId;
       }
+      actions.firstElementChild?.setAttribute('data-focus', 'true');
       break;
   }
   page.dataset.page = pages.length > 1 && (state.phase === 'intro' || state.phase === 'ending')
     ? `${pageIndex + 1}/${pages.length}` : '';
+  
+  // 聚焦第一个标记为focus的按钮（延迟确保DOM已更新）
+  setTimeout(() => {
+    const toFocus = actions.querySelector<HTMLElement>('[data-focus="true"]');
+    if (toFocus && page.dataset.phase !== 'placement') {
+      toFocus.focus({ preventScroll: true });
+    }
+  }, 0);
 }
 
 function render(state: Snapshot) {
@@ -277,19 +291,33 @@ drop.addEventListener('click', (event) => {
 });
 $('replay').addEventListener('click', replay);
 
-/** 16:9 整景等比完整显示；阅读区放不下时整块移到场景下方。 */
+/** 16:9 整景等比完整显示；阅读区放不下时整块移到场景下方。 V02修复：实际容器宽度计算，统一等比。 */
 function layout() {
   const gutter = Math.min(24, innerWidth * 0.02);
   const vw = document.documentElement.clientWidth - gutter * 2;
   const vh = innerHeight - gutter * 2;
+  
+  // 第一步：计算内布局（画境 + 阅读区叠在内）的理想宽度
   let width = Math.min(vw, vh * 16 / 9);
   const readerPx = (READER.bottom - READER.top) / FRAME.height * (width * 9 / 16);
   const inside = readerPx >= 92 && width >= 900;
-  // 下方阅读：横屏时画境让出阅读区高度，整页一屏可见；竖屏允许向下滚动。
-  if (!inside) width = innerWidth > innerHeight ? Math.min(vw, (vh - 150) * 16 / 9) : vw;
+  
+  // 第二步：若下方阅读，重新计算宽度，但要应用到实际页面padding后的容器
+  if (!inside) {
+    // 横屏：画境让出阅读区高度
+    // 竖屏：画境填满宽度
+    const isLandscape = innerWidth > innerHeight;
+    const availW = document.documentElement.clientWidth - gutter * 2;
+    if (isLandscape) {
+      width = Math.min(availW, (vh - 150) * 16 / 9);
+    } else {
+      width = availW;
+    }
+  }
+  
   const height = width * 9 / 16;
   scroll.style.width = width + 'px';
-  stage.style.height = height + 'px';
+  scroll.style.aspectRatio = '16/9';
   const layoutName = inside ? 'inside' : 'below';
   const changed = page.dataset.layout !== layoutName;
   page.dataset.layout = layoutName;
@@ -302,6 +330,8 @@ function layout() {
   } else {
     reader.removeAttribute('style');
   }
+  // V03/V05修复：窄屏下方阅读上下排列，重玩移到画下
+  page.dataset.narrowLayout = inside ? 'no' : (innerWidth <= 480 ? 'yes' : 'no');
   if (changed || inside) pageKey = '';
   renderReader(game.getState());
 }
