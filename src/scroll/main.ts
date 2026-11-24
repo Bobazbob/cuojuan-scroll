@@ -291,47 +291,54 @@ drop.addEventListener('click', (event) => {
 });
 $('replay').addEventListener('click', replay);
 
-/** 16:9 整景等比完整显示；阅读区放不下时整块移到场景下方。 V02修复：实际容器宽度计算，统一等比。 */
+/** 16:9 整景等比完整显示；阅读区放不下时整块移到场景下方。 V02修复：准确计算容器宽度，统一等比缩放。 */
 function layout() {
+  const pageElem = document.documentElement;
   const gutter = Math.min(24, innerWidth * 0.02);
-  const vw = document.documentElement.clientWidth - gutter * 2;
-  const vh = innerHeight - gutter * 2;
   
-  // 第一步：计算内布局（画境 + 阅读区叠在内）的理想宽度
-  let width = Math.min(vw, vh * 16 / 9);
-  const readerPx = (READER.bottom - READER.top) / FRAME.height * (width * 9 / 16);
+  // 实际可用宽度（扣除 gutter + safe-area）
+  const actualAvailW = pageElem.clientWidth - gutter * 2;
+  
+  // 第一步：计算内布局宽度
+  let width = Math.min(actualAvailW, innerHeight * 16 / 9 - gutter * 2);
+  const height = width * 9 / 16;
+  const readerPx = (READER.bottom - READER.top) / FRAME.height * height;
   const inside = readerPx >= 92 && width >= 900;
   
-  // 第二步：若下方阅读，重新计算宽度，但要应用到实际页面padding后的容器
+  // 第二步：若下方阅读，重新计算但保持16:9等比
+  let finalWidth = width;
+  let finalHeight = height;
   if (!inside) {
-    // 横屏：画境让出阅读区高度
-    // 竖屏：画境填满宽度
     const isLandscape = innerWidth > innerHeight;
-    const availW = document.documentElement.clientWidth - gutter * 2;
     if (isLandscape) {
-      width = Math.min(availW, (vh - 150) * 16 / 9);
+      // 横屏：让出150px给阅读区
+      finalWidth = Math.min(actualAvailW, (innerHeight - 150 - gutter * 2) * 16 / 9);
     } else {
-      width = availW;
+      // 竖屏：画境填满宽度
+      finalWidth = actualAvailW;
     }
+    finalHeight = finalWidth * 9 / 16;
   }
   
-  const height = width * 9 / 16;
-  scroll.style.width = width + 'px';
-  scroll.style.aspectRatio = '16/9';
+  scroll.style.width = finalWidth + 'px';
+  scroll.style.height = finalHeight + 'px';
+  stage.style.height = finalHeight + 'px';
   const layoutName = inside ? 'inside' : 'below';
   const changed = page.dataset.layout !== layoutName;
   page.dataset.layout = layoutName;
+  
+  // V03/V05修复：正确设置窄屏标记
+  page.dataset.narrowLayout = inside ? 'no' : (finalWidth < 500 ? 'yes' : 'no');
+  
   const reader = $('reader');
   if (inside) {
     Object.assign(reader.style, {
       left: pct(READER.left, FRAME.width), width: pct(READER.right - READER.left, FRAME.width),
-      top: (READER.top / FRAME.height * height) + 'px', height: readerPx + 'px',
+      top: (READER.top / FRAME.height * finalHeight) + 'px', height: readerPx + 'px',
     });
   } else {
     reader.removeAttribute('style');
   }
-  // V03/V05修复：窄屏下方阅读上下排列，重玩移到画下
-  page.dataset.narrowLayout = inside ? 'no' : (innerWidth <= 480 ? 'yes' : 'no');
   if (changed || inside) pageKey = '';
   renderReader(game.getState());
 }
